@@ -98,3 +98,4 @@ C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\refint\Cin
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\CineApp.pdb
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\CineApp.genruntimeconfig.cache
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\ref\CineApp.dll
+C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\CineApp.sourcelink.json
