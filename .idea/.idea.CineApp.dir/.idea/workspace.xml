@@ -5,26 +5,7 @@
     <projectFile profileName="https">CineApp.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5c779cd-13ec-43f0-8578-5d1537ae534b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/FilmServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/ref/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/ref/CineApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/refint/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/refint/CineApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/rpswa.dswa.cache.json" afterDir="false" />
-    </list>
+    <list default="true" id="c5c779cd-13ec-43f0-8578-5d1537ae534b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,22 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.CineApp: http.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.CineApp: http.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.CineApp: http">
     <configuration name="CineApp: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CineApp.csproj" />
@@ -123,6 +105,7 @@
       <workItem from="1777454384117" duration="629000" />
       <workItem from="1777455190783" duration="948000" />
       <workItem from="1777629324926" duration="3118000" />
+      <workItem from="1777632635976" duration="324000" />
     </task>
     <servers />
   </component>
