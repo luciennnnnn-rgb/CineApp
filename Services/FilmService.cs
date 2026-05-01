@@ -3,11 +3,11 @@ using CineApp.Models;
 
 namespace CineApp.Services;
 
-public class FilmServices
+public class FilmService
 {
     private readonly NpgsqlConnection _connection;
 
-    public FilmServices(NpgsqlConnection connection)
+    public FilmService(NpgsqlConnection connection)
     {
         _connection = connection;
     }
