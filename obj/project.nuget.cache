@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QfYhMK/grok=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\victo\\Documents\\application_info_2\\CineApp\\CineApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\victo\\.nuget\\packages\\npgsql\\10.0.2\\npgsql.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
