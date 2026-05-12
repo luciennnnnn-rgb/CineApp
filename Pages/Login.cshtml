@@ -1,0 +1,25 @@
+@page
+@model CineApp.Pages.LoginModel
+@{
+    ViewData["Title"] = "Connexion";
+}
+
+<h1>Connexion</h1>
+
+@if (Model.Erreur != null)
+{
+    <div class="alert alert-danger">@Model.Erreur</div>
+}
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Mot de passe</label>
+        <input type="password" class="form-control" asp-for="Password" />
+    </div>
+    <button type="submit" class="btn btn-primary">Se connecter</button>
+    <a href="/Register" class="btn btn-link">Pas encore de compte ?</a>
+</form>

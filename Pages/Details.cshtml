@@ -1,0 +1,18 @@
+@page "/Details/{id:int}"
+@model CineApp.Pages.DetailsModel
+@{
+    ViewData["Title"] = Model.Film?.Titre ?? "Film introuvable";
+}
+
+@if (Model.Film is null)
+{
+    <p>Film introuvable.</p>
+}
+else
+{
+    <h1>@Model.Film.Titre</h1>
+    <p><strong>Genre :</strong> @Model.Film.GenreNom</p>
+    <p><strong>Année :</strong> @Model.Film.AnneeSortie</p>
+    <p><strong>Description :</strong> @Model.Film.Description</p>
+    <a href="/" class="btn btn-secondary">Retour</a>
+}

@@ -1,0 +1,25 @@
+@page
+@model CineApp.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Inscription";
+}
+
+<h1>Créer un compte</h1>
+
+@if (Model.Erreur != null)
+{
+    <div class="alert alert-danger">@Model.Erreur</div>
+}
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Mot de passe</label>
+        <input type="password" class="form-control" asp-for="Password" />
+    </div>
+    <button type="submit" class="btn btn-primary">S'inscrire</button>
+    <a href="/Login" class="btn btn-link">Déjà un compte ?</a>
+</form>
