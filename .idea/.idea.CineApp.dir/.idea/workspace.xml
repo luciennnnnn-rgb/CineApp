@@ -6,16 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5c779cd-13ec-43f0-8578-5d1537ae534b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Pages/Details.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Details.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Login.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Login.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Register.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Register.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/UserService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Index.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Logout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Logout.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CineApp.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CineApp.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" afterDir="false" />
@@ -61,14 +57,19 @@
     <setting file="file://$PROJECT_DIR$/Models/Film.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Genre.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Admin/Films/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Admin/Films/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Details.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Details.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Login.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Logout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Logout.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Register.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/UserService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -77,24 +78,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.CineApp: http.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "master",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.CineApp: http.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.CineApp: http">
     <configuration name="CineApp: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CineApp.csproj" />
@@ -140,16 +141,29 @@
       <workItem from="1777455190783" duration="948000" />
       <workItem from="1777629324926" duration="3118000" />
       <workItem from="1777632635976" duration="2562000" />
-      <workItem from="1778594666920" duration="2490000" />
+      <workItem from="1778594666920" duration="3186000" />
+      <workItem from="1778764311964" duration="1502000" />
     </task>
+    <task id="LOCAL-00001" summary="commit login register">
+      <option name="closed" value="true" />
+      <created>1778597221069</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778597221069</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="commit login register" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit login register" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

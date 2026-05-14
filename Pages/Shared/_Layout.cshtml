@@ -23,6 +23,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-page="/Index">Films</a>
                         </li>
+                        @if (User.IsInRole("admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-page="/Admin/Films/Index">Admin</a>
+                            </li>
+                        }
                         @if (User.Identity!.IsAuthenticated)
                         {
                             <li class="nav-item">
