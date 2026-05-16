@@ -8,6 +8,7 @@ builder.Services.AddScoped<NpgsqlConnection>(_ =>
     new NpgsqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<FilmService>();
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<GenreService>();
 
 builder.Services.AddAuthentication("Cookies")
     .AddCookie("Cookies", options =>

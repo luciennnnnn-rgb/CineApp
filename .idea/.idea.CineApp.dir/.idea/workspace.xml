@@ -6,12 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5c779cd-13ec-43f0-8578-5d1537ae534b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Logout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Logout.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CineApp.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CineApp.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/GenreService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" afterDir="false" />
@@ -57,6 +57,10 @@
     <setting file="file://$PROJECT_DIR$/Models/Film.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Genre.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Admin/Films/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Admin/Films/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Details.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -67,6 +71,7 @@
     <setting file="file://$PROJECT_DIR$/Pages/Logout.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Register.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/GenreService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/UserService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -142,7 +147,7 @@
       <workItem from="1777629324926" duration="3118000" />
       <workItem from="1777632635976" duration="2562000" />
       <workItem from="1778594666920" duration="3186000" />
-      <workItem from="1778764311964" duration="1502000" />
+      <workItem from="1778764311964" duration="2029000" />
     </task>
     <task id="LOCAL-00001" summary="commit login register">
       <option name="closed" value="true" />
@@ -152,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778597221069</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit admin et logout">
+      <option name="closed" value="true" />
+      <created>1778765876321</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1778765876321</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +176,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="commit login register" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit login register" />
+    <MESSAGE value="commit admin et logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit admin et logout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

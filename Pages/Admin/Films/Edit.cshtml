@@ -1,0 +1,34 @@
+@page "/Admin/Films/Edit/{id:int}"
+@model CineApp.Pages.Admin.Films.EditModel
+@{
+    ViewData["Title"] = "Modifier un film";
+}
+
+<h1>Modifier un film</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Film.Id" />
+    <div class="mb-3">
+        <label class="form-label">Titre</label>
+        <input type="text" class="form-control" asp-for="Film.Titre" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea class="form-control" asp-for="Film.Description"></textarea>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Année de sortie</label>
+        <input type="number" class="form-control" asp-for="Film.AnneeSortie" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Genre</label>
+        <select class="form-control" asp-for="Film.GenreId">
+            @foreach (var genre in Model.Genres)
+            {
+                <option value="@genre.Id">@genre.Nom</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-warning">Modifier</button>
+    <a href="/Admin/Films/Index" class="btn btn-secondary">Annuler</a>
+</form>
