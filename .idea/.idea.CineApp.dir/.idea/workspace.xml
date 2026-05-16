@@ -6,18 +6,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5c779cd-13ec-43f0-8578-5d1537ae534b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/GenreService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/CommentaireService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Commentaire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Commentaire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Details.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Details.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Login.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Login.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FilmService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FilmService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.pdb" afterDir="false" />
@@ -71,6 +73,7 @@
     <setting file="file://$PROJECT_DIR$/Pages/Logout.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Register.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/CommentaireService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/GenreService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/UserService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -148,6 +151,7 @@
       <workItem from="1777632635976" duration="2562000" />
       <workItem from="1778594666920" duration="3186000" />
       <workItem from="1778764311964" duration="2029000" />
+      <workItem from="1778932883482" duration="2428000" />
     </task>
     <task id="LOCAL-00001" summary="commit login register">
       <option name="closed" value="true" />
@@ -165,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778765876321</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="genre modif et creation">
+      <option name="closed" value="true" />
+      <created>1778933041828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778933041828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +189,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="commit login register" />
     <MESSAGE value="commit admin et logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit admin et logout" />
+    <MESSAGE value="genre modif et creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="genre modif et creation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

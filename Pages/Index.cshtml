@@ -4,11 +4,27 @@
     ViewData["Title"] = "Films";
 }
 
-<h1>Catalogue de films</h1>
+<h1>🎬 Catalogue de films</h1>
+
+<form method="get" class="mb-4">
+    <div class="d-flex gap-2">
+        <select name="GenreId" class="form-control w-auto">
+            <option value="">Tous les genres</option>
+            @foreach (var genre in Model.Genres)
+            {
+                <option value="@genre.Id" selected="@(Model.GenreId == genre.Id)">
+                    @genre.Nom
+                </option>
+            }
+        </select>
+        <button type="submit" class="btn btn-primary">Filtrer</button>
+        <a href="/" class="btn btn-secondary">Réinitialiser</a>
+    </div>
+</form>
 
 @if (!Model.Films.Any())
 {
-    <p>Aucun film disponible pour le moment.</p>
+    <p>Aucun film disponible pour ce genre.</p>
 }
 else
 {

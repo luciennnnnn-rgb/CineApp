@@ -8,4 +8,5 @@ public class Commentaire
     public DateTime DatePublication { get; set; }
     public int FilmId { get; set; }
     public int UserId { get; set; }
+    public string? UserEmail { get; set; }
 }

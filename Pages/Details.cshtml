@@ -14,5 +14,53 @@ else
     <p><strong>Genre :</strong> @Model.Film.GenreNom</p>
     <p><strong>Année :</strong> @Model.Film.AnneeSortie</p>
     <p><strong>Description :</strong> @Model.Film.Description</p>
-    <a href="/" class="btn btn-secondary">Retour</a>
+    <a href="/" class="btn btn-secondary mb-4">Retour</a>
+
+    <h3>Commentaires</h3>
+
+    @if (User.Identity!.IsAuthenticated)
+    {
+        <form method="post" class="mb-4">
+            <input type="hidden" name="FilmId" value="@Model.Film.Id" />
+            <div class="mb-3">
+                <label class="form-label">Votre commentaire</label>
+                <textarea class="form-control" name="Contenu" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Note (1 à 5)</label>
+                <select class="form-control w-auto" name="Note">
+                    <option value="1">⭐ 1</option>
+                    <option value="2">⭐⭐ 2</option>
+                    <option value="3">⭐⭐⭐ 3</option>
+                    <option value="4">⭐⭐⭐⭐ 4</option>
+                    <option value="5">⭐⭐⭐⭐⭐ 5</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Publier</button>
+        </form>
+    }
+    else
+    {
+        <p><a href="/Login">Connectez-vous</a> pour laisser un commentaire.</p>
+    }
+
+    @if (!Model.Commentaires.Any())
+    {
+        <p>Aucun commentaire pour ce film.</p>
+    }
+    else
+    {
+        @foreach (var c in Model.Commentaires)
+        {
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        @c.UserEmail - @c.DatePublication.ToString("dd/MM/yyyy")
+                        <span class="ms-2">@string.Concat(Enumerable.Repeat("⭐", c.Note))</span>
+                    </h6>
+                    <p class="card-text">@c.Contenu</p>
+                </div>
+            </div>
+        }
+    }
 }

@@ -161,4 +161,38 @@ public class FilmService
         command.ExecuteNonQuery();
         _connection.Close();
     }
+    public List<Film> GetByGenre(int genreId)
+    {
+        _connection.Open();
+        var command = _connection.CreateCommand();
+        command.CommandText = @"
+        SELECT f.Id_film, f.Titre, f.Description, f.AnneeSortie, f.GenreId, g.Nom
+        FROM Film f
+        JOIN Genre g ON f.GenreId = g.Id
+        WHERE f.GenreId = @genreId";
+
+        var param = command.CreateParameter();
+        param.ParameterName = "@genreId";
+        param.Value = genreId;
+        command.Parameters.Add(param);
+
+        using var reader = command.ExecuteReader();
+        var films = new List<Film>();
+
+        while (reader.Read())
+        {
+            films.Add(new Film
+            {
+                Id = reader.GetInt32(0),
+                Titre = reader.GetString(1),
+                Description = reader.GetString(2),
+                AnneeSortie = reader.GetInt32(3),
+                GenreId = reader.GetInt32(4),
+                GenreNom = reader.GetString(5)
+            });
+        }
+
+        _connection.Close();
+        return films;
+    }
 }
