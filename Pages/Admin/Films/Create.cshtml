@@ -7,27 +7,30 @@
 <h1>Ajouter un film</h1>
 
 <form method="post">
-    <div class="mb-3">
-        <label class="form-label">Titre</label>
-        <input type="text" class="form-control" asp-for="Film.Titre" />
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Description</label>
-        <textarea class="form-control" asp-for="Film.Description"></textarea>
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Année de sortie</label>
-        <input type="number" class="form-control" asp-for="Film.AnneeSortie" />
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Genre</label>
-        <select class="form-control" asp-for="Film.GenreId">
-            @foreach (var genre in Model.Genres)
-            {
-                <option value="@genre.Id">@genre.Nom</option>
-            }
-        </select>
-    </div>
-    <button type="submit" class="btn btn-success">Ajouter</button>
-    <a href="/Admin/Films/Index" class="btn btn-secondary">Annuler</a>
+<div class="mb-3">
+    <label class="form-label">Titre</label>
+    <input type="text" class="form-control" asp-for="Film.Titre" />
+    <span asp-validation-for="Film.Titre" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Description</label>
+    <textarea class="form-control" asp-for="Film.Description"></textarea>
+    <span asp-validation-for="Film.Description" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Année de sortie</label>
+    <input type="number" class="form-control" asp-for="Film.AnneeSortie" />
+    <span asp-validation-for="Film.AnneeSortie" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Genre</label>
+    <select class="form-control" asp-for="Film.GenreId">
+        @foreach (var genre in Model.Genres)
+        {
+            <option value="@genre.Id">@genre.Nom</option>
+        }
+    </select>
+</div>
+<button type="submit" class="btn btn-success">Ajouter</button>
+<a href="/Admin/Films/Index" class="btn btn-secondary">Annuler</a>
 </form>

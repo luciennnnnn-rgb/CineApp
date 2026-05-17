@@ -11,14 +11,17 @@
     <div class="mb-3">
         <label class="form-label">Titre</label>
         <input type="text" class="form-control" asp-for="Film.Titre" />
+        <span asp-validation-for="Film.Titre" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label class="form-label">Description</label>
         <textarea class="form-control" asp-for="Film.Description"></textarea>
+        <span asp-validation-for="Film.Description" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label class="form-label">Année de sortie</label>
         <input type="number" class="form-control" asp-for="Film.AnneeSortie" />
+        <span asp-validation-for="Film.AnneeSortie" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label class="form-label">Genre</label>

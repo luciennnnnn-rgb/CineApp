@@ -22,6 +22,8 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
+app.UseStatusCodePagesWithReExecute("/Error", "?statusCode={0}");
+app.UseExceptionHandler("/Error");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();

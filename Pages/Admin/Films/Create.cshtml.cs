@@ -29,6 +29,11 @@ public class CreateModel : PageModel
 
     public IActionResult OnPost()
     {
+        if (!ModelState.IsValid)
+        {
+            Genres = _genreService.GetAll();
+            return Page();
+        }
         _filmService.Create(Film);
         return RedirectToPage("/Admin/Films/Index");
     }

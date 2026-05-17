@@ -32,6 +32,11 @@ public class EditModel : PageModel
 
     public IActionResult OnPost()
     {
+        if (!ModelState.IsValid)
+        {
+            Genres = _genreService.GetAll();
+            return Page();
+        }
         _filmService.Update(Film);
         return RedirectToPage("/Admin/Films/Index");
     }
