@@ -1,0 +1,10 @@
+@model CineApp.Models.Film
+
+<div class="card h-100">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Titre</h5>
+        <p class="card-text text-muted">@Model.GenreNom - @Model.AnneeSortie</p>
+        <p class="card-text">@Model.Description</p>
+        <a href="/Details/@Model.Id" class="btn btn-primary">Voir détails</a>
+    </div>
+</div>

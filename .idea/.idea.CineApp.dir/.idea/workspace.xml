@@ -6,21 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5c779cd-13ec-43f0-8578-5d1537ae534b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Pages/Shared/_FilmCard.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CineApp.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CineApp.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Film.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Film.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Admin/Films/Create.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Admin/Films/Edit.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Error.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Error.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Error.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/CineApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/CineApp.sourcelink.json" afterDir="false" />
@@ -153,7 +147,8 @@
       <workItem from="1778764311964" duration="2029000" />
       <workItem from="1778932883482" duration="2428000" />
       <workItem from="1778959040344" duration="226000" />
-      <workItem from="1779043960708" duration="651000" />
+      <workItem from="1779043960708" duration="701000" />
+      <workItem from="1779205815531" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="commit login register">
       <option name="closed" value="true" />
@@ -195,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778959252451</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="erreur et required">
+      <option name="closed" value="true" />
+      <created>1779044658498</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1779044658498</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +212,8 @@
     <MESSAGE value="commit admin et logout" />
     <MESSAGE value="genre modif et creation" />
     <MESSAGE value="Commentaire" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commentaire" />
+    <MESSAGE value="erreur et required" />
+    <option name="LAST_COMMIT_MESSAGE" value="erreur et required" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

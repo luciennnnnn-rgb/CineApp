@@ -28,19 +28,14 @@
 }
 else
 {
-    <div class="row">
-        @foreach (var film in Model.Films)
-        {
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">@film.Titre</h5>
-                        <p class="card-text text-muted">@film.GenreNom - @film.AnneeSortie</p>
-                        <p class="card-text">@film.Description</p>
-                        <a href="/Details/@film.Id" class="btn btn-primary">Voir détails</a>
-                    </div>
+   
+        <div class="row">
+            @foreach (var film in Model.Films)
+            {
+                <div class="col-md-4 mb-4">
+                    <partial name="_FilmCard" model="film" />
                 </div>
-            </div>
-        }
-    </div>
+            }
+        </div>
+    
 }
