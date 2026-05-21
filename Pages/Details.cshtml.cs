@@ -3,6 +3,7 @@ using CineApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CineApp.Pages;
 
@@ -28,6 +29,7 @@ public class DetailsModel : PageModel
         return Page();
     }
 
+    [Authorize]
     public IActionResult OnPost(int filmId, string contenu, int note)
     {
         var userIdStr = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -43,6 +45,12 @@ public class DetailsModel : PageModel
         };
 
         _commentaireService.Create(commentaire);
+        return RedirectToPage(new { id = filmId });
+    }
+    [Authorize(Roles = "admin")]
+    public IActionResult OnPostDeleteComment(int commentaireId, int filmId)
+    {
+        _commentaireService.Delete(commentaireId);
         return RedirectToPage(new { id = filmId });
     }
 }

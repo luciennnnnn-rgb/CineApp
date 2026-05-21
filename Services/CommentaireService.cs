@@ -17,11 +17,12 @@ public class CommentaireService
         _connection.Open();
         var command = _connection.CreateCommand();
         command.CommandText = @"
-            SELECT c.Id, c.Contenu, c.Note, c.DatePublication, c.FilmId, c.UserId, u.Email
-            FROM Commentaire c
-            JOIN Users u ON c.UserId = u.Id
-            WHERE c.FilmId = @filmId
-            ORDER BY c.DatePublication DESC";
+            SELECT c.Id, c.Contenu, c.Note, c.DatePublication, c.FilmId, c.UserId, 
+         u.Prenom || ' ' || u.Nom as NomComplet
+        FROM Commentaire c
+        JOIN Users u ON c.UserId = u.Id
+        WHERE c.FilmId = @filmId
+        ORDER BY c.DatePublication DESC";
 
         var param = command.CreateParameter();
         param.ParameterName = "@filmId";
@@ -41,7 +42,7 @@ public class CommentaireService
                 DatePublication = reader.GetDateTime(3),
                 FilmId = reader.GetInt32(4),
                 UserId = reader.GetInt32(5),
-                UserEmail = reader.GetString(6)
+                UserNom = reader.GetString(6)
             });
         }
 
@@ -81,6 +82,20 @@ public class CommentaireService
         p5.ParameterName = "@userId";
         p5.Value = commentaire.UserId;
         command.Parameters.Add(p5);
+
+        command.ExecuteNonQuery();
+        _connection.Close();
+    }
+    public void Delete(int id)
+    {
+        _connection.Open();
+        var command = _connection.CreateCommand();
+        command.CommandText = "DELETE FROM Commentaire WHERE Id = @id";
+
+        var param = command.CreateParameter();
+        param.ParameterName = "@id";
+        param.Value = id;
+        command.Parameters.Add(param);
 
         command.ExecuteNonQuery();
         _connection.Close();

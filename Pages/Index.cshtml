@@ -4,7 +4,10 @@
     ViewData["Title"] = "Films";
 }
 
-<h1>🎬 Catalogue de films</h1>
+<div class="text-center py-5 mb-4" style="background: linear-gradient(180deg, #1e2a3a, #111827); border-radius: 12px;">
+    <h1 class="display-4 fw-bold" style="color: #4f8ef7;">🎬 CineApp</h1>
+    <p class="lead" style="color: #aaaaaa;">Découvrez les meilleurs films du moment</p>
+</div>
 
 <form method="get" class="mb-4">
     <div class="d-flex gap-2">
@@ -24,18 +27,16 @@
 
 @if (!Model.Films.Any())
 {
-    <p>Aucun film disponible pour ce genre.</p>
+    <p class="text-muted">Aucun film disponible pour ce genre.</p>
 }
 else
 {
-   
-        <div class="row">
-            @foreach (var film in Model.Films)
-            {
-                <div class="col-md-4 mb-4">
-                    <partial name="_FilmCard" model="film" />
-                </div>
-            }
-        </div>
-    
+    <div class="row">
+        @foreach (var film in Model.Films)
+        {
+            <div class="col-md-4 mb-4">
+                <partial name="_FilmCard" model="film" />
+            </div>
+        }
+    </div>
 }

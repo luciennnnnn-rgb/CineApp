@@ -24,7 +24,7 @@ public class UserService
             numBytesRequested: 256 / 8));
     }
 
-    public void Register(string email, string password)
+    public void Register(string email, string password, string prenom, string nom)
     {
         byte[] salt = RandomNumberGenerator.GetBytes(128 / 8);
         string hashed = HashPassword(password, salt);
@@ -33,8 +33,8 @@ public class UserService
         _connection.Open();
         var command = _connection.CreateCommand();
         command.CommandText = @"
-            INSERT INTO Users (Email, Password, Role)
-            VALUES (@email, @password, 'user')";
+        INSERT INTO Users (Email, Password, Role, Prenom, Nom)
+        VALUES (@email, @password, 'user', @prenom, @nom)";
 
         var p1 = command.CreateParameter();
         p1.ParameterName = "@email";
@@ -46,6 +46,16 @@ public class UserService
         p2.Value = saltStr + ":" + hashed;
         command.Parameters.Add(p2);
 
+        var p3 = command.CreateParameter();
+        p3.ParameterName = "@prenom";
+        p3.Value = prenom;
+        command.Parameters.Add(p3);
+
+        var p4 = command.CreateParameter();
+        p4.ParameterName = "@nom";
+        p4.Value = nom;
+        command.Parameters.Add(p4);
+
         command.ExecuteNonQuery();
         _connection.Close();
     }
@@ -54,7 +64,7 @@ public class UserService
     {
         _connection.Open();
         var command = _connection.CreateCommand();
-        command.CommandText = "SELECT Id, Email, Password, Role FROM Users WHERE Email = @email";
+        command.CommandText = "SELECT Id, Email, Password, Role, Prenom, Nom FROM Users WHERE Email = @email";
 
         var param = command.CreateParameter();
         param.ParameterName = "@email";
@@ -76,7 +86,9 @@ public class UserService
                 {
                     Id = reader.GetInt32(0),
                     Email = reader.GetString(1),
-                    Role = reader.GetString(3)
+                    Role = reader.GetString(3),
+                    Prenom = reader.GetString(4),
+                    Nom = reader.GetString(5)
                 };
                 _connection.Close();
                 return user;

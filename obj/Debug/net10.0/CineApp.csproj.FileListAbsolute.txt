@@ -23,7 +23,6 @@ C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\rjsmcshtml
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\scopedcss\bundle\CineApp.styles.css
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\scopedcss\projectbundle\CineApp.bundle.scp.css
-C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\compressed\eh8qy9pxge-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\compressed\b5zsy88t6l-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\compressed\lbpg0vij83-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\compressed\semd51j1v3-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -99,3 +98,4 @@ C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\CineApp.pd
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\CineApp.genruntimeconfig.cache
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\ref\CineApp.dll
 C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\CineApp.sourcelink.json
+C:\Users\victo\Documents\application_info_2\CineApp\obj\Debug\net10.0\compressed\eh8qy9pxge-{0}-vaghqzn003-vaghqzn003.gz

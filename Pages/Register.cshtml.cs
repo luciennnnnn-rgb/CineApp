@@ -9,6 +9,12 @@ public class RegisterModel : PageModel
     private readonly UserService _userService;
 
     [BindProperty]
+    public string Prenom { get; set; } = string.Empty;
+
+    [BindProperty]
+    public string Nom { get; set; } = string.Empty;
+
+    [BindProperty]
     public string Email { get; set; } = string.Empty;
 
     [BindProperty]
@@ -27,7 +33,7 @@ public class RegisterModel : PageModel
     {
         try
         {
-            _userService.Register(Email, Password);
+            _userService.Register(Email, Password, Prenom, Nom);
             return RedirectToPage("/Login");
         }
         catch

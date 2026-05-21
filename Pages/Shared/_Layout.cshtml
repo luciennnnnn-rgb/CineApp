@@ -11,37 +11,41 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-dark mb-3" style="background-color: #0d1321; border-bottom: 2px solid #4f8ef7;">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">CineApp</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" asp-page="/Index" style="color: #4f8ef7; font-size: 1.5rem;">🎬 CineApp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-page="/Index">Films</a>
+                            <a class="nav-link" asp-page="/Index">Films</a>
                         </li>
                         @if (User.IsInRole("admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-page="/Admin/Films/Index">Admin</a>
+                                <a class="nav-link" asp-page="/Admin/Films/Index">Admin</a>
                             </li>
                         }
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
                         @if (User.Identity!.IsAuthenticated)
                         {
+                            <li class="nav-item d-flex align-items-center me-3">
+                                <span style="color: #94a3b8; font-size: 0.9rem;">👤 @User.Identity.Name</span>
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-page="/Logout">Déconnexion</a>
+                                <a class="btn btn-outline-danger btn-sm" asp-page="/Logout">Déconnexion</a>
                             </li>
                         }
                         else
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-page="/Login">Connexion</a>
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-light btn-sm" asp-page="/Login">Connexion</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-page="/Register">Inscription</a>
+                                <a class="btn btn-primary btn-sm" asp-page="/Register">S'inscrire</a>
                             </li>
                         }
                     </ul>
@@ -55,7 +59,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted" style="position: relative; z-index: 1;">
         <div class="container">
             &copy; 2026 - CineApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>

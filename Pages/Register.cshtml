@@ -13,13 +13,25 @@
 
 <form method="post">
     <div class="mb-3">
+        <label class="form-label">Prénom</label>
+        <input type="text" class="form-control" asp-for="Prenom" />
+        <span asp-validation-for="Prenom" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nom</label>
+        <input type="text" class="form-control" asp-for="Nom" />
+        <span asp-validation-for="Nom" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
         <label class="form-label">Email</label>
         <input type="email" class="form-control" asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label class="form-label">Mot de passe</label>
         <input type="password" class="form-control" asp-for="Password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary">S'inscrire</button>
-    <a href="/Login" class="btn btn-link">Déjà un compte ?</a>
+    <a href="/Login" class="btn btn-secondary ms-2">Déjà un compte ?</a>
 </form>
